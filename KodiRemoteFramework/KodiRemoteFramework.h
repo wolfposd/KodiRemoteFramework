@@ -10,6 +10,9 @@
 #import "KodiRemoteAPI.h"
 #import "KRFSettingsDelegate.h"
 
+#import "KodiRemoteInput"
+
+
 //! Project version number for KodiRemoteFramework.
 FOUNDATION_EXPORT double KodiRemoteFrameworkVersionNumber;
 
@@ -17,5 +20,4 @@ FOUNDATION_EXPORT double KodiRemoteFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char KodiRemoteFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <KodiRemoteFramework/PublicHeader.h>
-
 
