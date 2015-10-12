@@ -19,4 +19,25 @@
 
 +(NSMutableDictionary*) makeDictionaryForMethod:(NSString*) method;
 
+
+/**
+ *  Creates a Dictionary from input data
+ *
+ *  @param input input data
+ *
+ *  @return dict
+ */
++(NSDictionary*) JSONtoDictFromData:(NSData*) input;
++(NSDictionary*) JSONtoDictFromString:(NSString*) input;
+
+/**
+ *  Creates an Array from input data
+ *
+ *  @param input input data
+ *
+ *  @return array
+ */
++(NSArray*) JSONtoArrayFromData:(NSData*) input;
++(NSArray*) JSONtoArrayFromString:(NSString*) input;
+
 @end

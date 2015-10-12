@@ -17,6 +17,8 @@
 		79606A891BC69EB000E0172A /* KodiRemoteBasics.m in Sources */ = {isa = PBXBuildFile; fileRef = 79606A871BC69EB000E0172A /* KodiRemoteBasics.m */; settings = {ASSET_TAGS = (); }; };
 		79606A8C1BC6A5B400E0172A /* KodiRemotePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 79606A8A1BC6A5B400E0172A /* KodiRemotePlayer.h */; settings = {ASSET_TAGS = (); }; };
 		79606A8D1BC6A5B400E0172A /* KodiRemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79606A8B1BC6A5B400E0172A /* KodiRemotePlayer.m */; settings = {ASSET_TAGS = (); }; };
+		79BB30311BCBE4BD006DB27E /* KRPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BB302F1BCBE4BD006DB27E /* KRPlayer.h */; settings = {ASSET_TAGS = (); }; };
+		79BB30321BCBE4BD006DB27E /* KRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BB30301BCBE4BD006DB27E /* KRPlayer.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		79606A871BC69EB000E0172A /* KodiRemoteBasics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KodiRemoteBasics.m; sourceTree = "<group>"; };
 		79606A8A1BC6A5B400E0172A /* KodiRemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KodiRemotePlayer.h; sourceTree = "<group>"; };
 		79606A8B1BC6A5B400E0172A /* KodiRemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KodiRemotePlayer.m; sourceTree = "<group>"; };
+		79BB302F1BCBE4BD006DB27E /* KRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRPlayer.h; sourceTree = "<group>"; };
+		79BB30301BCBE4BD006DB27E /* KRPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,17 @@
 			isa = PBXGroup;
 			children = (
 				79588C4D1BC68BB30097C70B /* KodiRemoteFramework.h */,
+				79BB302E1BCBE497006DB27E /* High Level */,
+				79BB302D1BCBE486006DB27E /* Low Level */,
+				79588C4F1BC68BB30097C70B /* Info.plist */,
+				79588C591BC68D6E0097C70B /* KRFSettingsDelegate.h */,
+			);
+			path = KodiRemoteFramework;
+			sourceTree = "<group>";
+		};
+		79BB302D1BCBE486006DB27E /* Low Level */ = {
+			isa = PBXGroup;
+			children = (
 				79588C551BC68CAB0097C70B /* KodiRemoteAPI.h */,
 				79588C561BC68CAB0097C70B /* KodiRemoteAPI.m */,
 				79606A8A1BC6A5B400E0172A /* KodiRemotePlayer.h */,
@@ -73,10 +88,17 @@
 				79606A831BC69DF500E0172A /* KodiRemoteInput.m */,
 				79606A861BC69EB000E0172A /* KodiRemoteBasics.h */,
 				79606A871BC69EB000E0172A /* KodiRemoteBasics.m */,
-				79588C4F1BC68BB30097C70B /* Info.plist */,
-				79588C591BC68D6E0097C70B /* KRFSettingsDelegate.h */,
 			);
-			path = KodiRemoteFramework;
+			name = "Low Level";
+			sourceTree = "<group>";
+		};
+		79BB302E1BCBE497006DB27E /* High Level */ = {
+			isa = PBXGroup;
+			children = (
+				79BB302F1BCBE4BD006DB27E /* KRPlayer.h */,
+				79BB30301BCBE4BD006DB27E /* KRPlayer.m */,
+			);
+			name = "High Level";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79588C571BC68CAB0097C70B /* KodiRemoteAPI.h in Headers */,
+				79BB30311BCBE4BD006DB27E /* KRPlayer.h in Headers */,
 				79588C4E1BC68BB30097C70B /* KodiRemoteFramework.h in Headers */,
 				79606A8C1BC6A5B400E0172A /* KodiRemotePlayer.h in Headers */,
 				79606A841BC69DF500E0172A /* KodiRemoteInput.h in Headers */,
@@ -164,6 +187,7 @@
 			files = (
 				79588C581BC68CAB0097C70B /* KodiRemoteAPI.m in Sources */,
 				79606A8D1BC6A5B400E0172A /* KodiRemotePlayer.m in Sources */,
+				79BB30321BCBE4BD006DB27E /* KRPlayer.m in Sources */,
 				79606A891BC69EB000E0172A /* KodiRemoteBasics.m in Sources */,
 				79606A851BC69DF500E0172A /* KodiRemoteInput.m in Sources */,
 			);

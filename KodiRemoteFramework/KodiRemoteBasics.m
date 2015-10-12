@@ -31,4 +31,40 @@
     return dict;
 }
 
+
++(NSDictionary*) JSONtoDictFromData:(NSData*) input
+{
+    NSError* error = nil;
+    NSDictionary* dict = [NSJSONSerialization JSONObjectWithData:input options:kNilOptions error:&error];
+    
+    if(!dict)
+        // do stuff with error?
+        return nil;
+    else
+        return dict;
+}
+
++(NSDictionary*) JSONtoDictFromString:(NSString*) input
+{
+    return [self JSONtoDictFromData:[input dataUsingEncoding:NSUTF8StringEncoding]];
+}
+
+
++(NSArray*) JSONtoArrayFromData:(NSData*) input
+{
+    NSError* error = nil;
+    NSArray* array = [NSJSONSerialization JSONObjectWithData:input options:kNilOptions error:&error];
+    
+    if(!array)
+        // do stuff with error?
+        return nil;
+    else
+        return array;
+}
+
++(NSArray*) JSONtoArrayFromString:(NSString*) input
+{
+    return [self JSONtoArrayFromData:[input dataUsingEncoding:NSUTF8StringEncoding]];
+}
+
 @end
